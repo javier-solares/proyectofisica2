@@ -1,0 +1,112 @@
+
+#contenedor-loader{
+    position: fixed;
+    z-index: 25000;
+    background-color: black;
+    background-image: url(https://fondosmil.com/fondo/12534.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 100vw 100vh;
+   
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+body {
+    background-image: url(https://www.pctecnika.cl/wp-content/uploads/2017/05/cropped-pc-hardware-computer-hd-wallpaper-1920x1080-10094-11-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-size: 100vw 100vh;
+    /*fixed*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: lightcoral;
+}
+
+
+nav ul li {
+    --c: rgb(241, 223, 177);
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;  
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    top: 300px;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+

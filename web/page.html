@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto fisica</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/stilobuttons.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body onload="startTime()">
+
+    <header>
+        <div class="clockdate">
+            <span id="time"></span>
+            <span id="date"></span>
+        </div>
+
+        <nav>
+
+            <a href="./informe.pdf" target="_blank">Informe</a>
+            <a href="./presentacion.pdf" target="_blank">Presentacion</a>
+            <a href="./info.html">Proyecto</a>
+            <!--
+            <a href="#"></a>
+            <a href="#"></a>-->
+
+        </nav>
+
+        <section class="textos-header">
+            <h1></h1>
+            <h2></h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nuestro producto</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/10.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3>Los mejores productos</h3>
+                    <p>Nuestro producto está 100% garantizado con la mejor calidad del mercado, conservando un precio accesible, por esa misma razón ofrecemos 20 días de garantía después de su compra, valida por cualquier defecto de fábrica o malfuncionamiento
+                        del producto.</p>
+                    <h3></h3>
+                    <p>La garantía está sujeta a restricciones: No es válida por daños externos o de terceros (como humedad, caídas, golpes o cualquier otro percance). La garantía se hará efectiva por cambio del mismo producto si no hay en existencia se
+                        hará efectivo la devolución del dinero
+                    </p>
+                    <h3>Valor</h3>
+                    <p>Q.100.00 c/u</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Componentes</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="./img/1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Potenciómetro de 1k</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Resistencias de 330 ohmios.</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Transistor BC547 NPN.</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cable USB de 5 Voltios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Motor de 1-5 Voltios </p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cable de protoboard</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Terminal azul de 2 pines</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/8.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Placa de cobre o Circuit Board</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="clientes contenedor">
+            <h2 class="titulo">Video demostrativo</h2>
+
+            <a href="./img/ProtoboardProyect.mp4" target="_blank">
+                <div class="button-container-1">
+
+                    <button id='work' type="button" name="Hover">Simulación</button>
+                </div>
+            </a>
+            <a href="./img/prototipo.mp4" target="_blank">
+                <div class="button-container-2">
+
+                    <button type="button" name="Hover">Prototipo</button>
+                </div>
+            </a>
+
+
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestra Misión y Visión</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion1.svg" alt="">
+                        <h3>VISIÓN</h3>
+                        <p>Priorizar nuestros clientes, ayudándolos con la innovación y nuevos diseños en todo momento para generar el máximo desempeño en nuestros productos, y entregar la mejor calidad a nuestros compradores.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion4.svg" alt="">
+                        <h3>MISIÓN</h3>
+                        <p>Innovar el mercado con productos de alta calidad pero de bajo precio, utilizar materia prima que no dañe el ambiente o que su impacto sea mínimo, brindar el mejor precio en el mercado, acercándonos mas a nuestros clientes.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion3.svg" alt="">
+                        <h3>OBJETIVO</h3>
+                        <p>Demostrar la importancia de un regulador de voltaje, haciendo uso del mismo para la creación de un mini ventilador. <br>Implementando la tecnología para facilitarnos la vida o hacer tareas mucho más practicas. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>5289-9858</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>tecnotec@gmail.com</p>
+            </div>
+            <!-- <div class="content-foo">
+                <h4>Location</h4>
+                <p>8296312</p>
+            </div>-->
+
+        </div>
+        <h2 class="titulo-final">&copy; </h2>
+    </footer>
+
+
+
+    <script src="./scirpt.js"></script>
+
+
+</body>
+
+</html>
